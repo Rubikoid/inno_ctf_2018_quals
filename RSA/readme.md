@@ -11,3 +11,4 @@
 
 ## WriteUp 
 
+Классическое задание для CTF'a. Ставим [тулзу](https://github.com/Ganapati/RsaCtfTool), декриптим, сдаем флаг.

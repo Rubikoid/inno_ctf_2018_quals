@@ -9,5 +9,7 @@
 > Внимание! Данный образ общий для заданий "Подарок от админа" и "Пароли от сайта"
 > https://yadi.sk/d/DVrkOxa53TxAze
 
+> [Зеркало](https://yadi.sk/d/zpCvrGyy3UDpJb)
+
 ## WriteUp 
 
