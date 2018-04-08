@@ -41,4 +41,4 @@ for task in tasks:
 		f.write('**Points:** ' + str(task['points']) + "\n")
 		f.write('**Description:**\n\n')
 		for i in task['description'].replace('\r', '').split('\n'):
-			f.write('> ' + i + '\n')
+			f.write('> ' + i + '\n\n')

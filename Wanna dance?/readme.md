@@ -6,5 +6,8 @@
 **Description:**
 
 > Перехваченный траффик продолжает поступать к нам от наших специалистов. Выясните, что было передано!
+
 > 
+
 > https://innoctf.hackforces.com/files/forensic/100/traffic.pcapng
+
