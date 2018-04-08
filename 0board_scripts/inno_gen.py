@@ -5,6 +5,8 @@ from cursesmenu.items import *
 
 import requests
 
+import os
+
 fromID = 207
 toID = 232
 url = 'https://api.hackforces.com/api/task.detail?guid='
@@ -25,27 +27,18 @@ def printTask(id, tasks):
 for i in range(fromID, toID+1):
 	tasks.append(requests.get(url+str(i)).json())
 
-solved = []
-# getting solved disabled
-#for i in requests.get(url2).json()['tasks']:
-#	if i['solved'] == True:
-#		solved.append(i['title'])
-
-tList = [i['title'] if i['title'] not in solved else '\/ '+i['title'] for i in tasks]
-
-#if u need tasks in file
-"""
-with open('tas.txt', 'w') as f:
-	for task in tasks:
-		f.write("Name: "+task['title'])
-		f.write("\nDesc: "+task['description'])
-		f.write('\nCost: '+str(task['points']))
-		f.write('\nTags: '+task['tags'])
-		f.write('\n\n')
-"""
-
-while True:
-	selected = SelectionMenu.get_selection(tList)
-	if selected == len(tList):
-		break
-	printTask(selected, tasks)
+for task in tasks:
+	if task['title'] == "PPC-300": #fix bad task
+		continue
+	#old path
+	#path = '../' + task['tags'] + str(task['points']) + ' - ' + task['title']	
+	#print(task['title'], os.rename(path, new_path))
+	path = '../' + task['title']
+	#os.rename(path+'/readme.md',path+'/readme.md.back')
+	with open(path+'/readme.md', 'w') as f:
+		f.write('# '+ task['title'] + "\n\n\n")
+		f.write('**Category:** ' + task['tags'] + "\n")
+		f.write('**Points:** ' + str(task['points']) + "\n")
+		f.write('**Description:**\n\n')
+		for i in task['description'].replace('\r', '').split('\n'):
+			f.write('> ' + i + '\n')

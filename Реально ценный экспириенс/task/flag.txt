@@ -1,0 +1,1 @@
+Good job! You found old RCE from 2005! Here is your flag: CTF{r00t_m3_1f_y0u_c4n}

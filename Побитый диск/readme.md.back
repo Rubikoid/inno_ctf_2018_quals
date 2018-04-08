@@ -1,0 +1,5 @@
+Name: Побитый диск
+Desc: Наш предыдущий админ попортил usb-флешку нашей сотрудницы. По её словам, там хранились очень важные для компании данные (а не просто фотографии котиков) 
+https://innoctf.hackforces.com/files/admin/400/bad_usb.dmg
+Cost: 400
+Tags: img, dmg, filesystem, admin
