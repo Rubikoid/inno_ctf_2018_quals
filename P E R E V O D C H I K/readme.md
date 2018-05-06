@@ -11,3 +11,8 @@
 
 ## WriteUp 
 
+См. solve.py. Не забудь добавить translate api key.
+
+> Requires:
+> Flask
+> nclib
