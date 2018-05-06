@@ -10,3 +10,4 @@
 
 ## WriteUp 
 
+Ищем тулзу для перевода dmg в img. Находим [dmg2img](http://www.softpedia.com/get/System/Hard-Disk-Utils/DMG2IMG.shtml) с [открытым кодом](https://github.com/Lekensteyn/dmg2img). Пробуем перевести, видим ошибку, ищем в исходниках на чём валится, смотрим почему, находим нужную сигнатуру, с помощью 010 editor фиксим сигнатуру. Пробуем еще раз. Success. В полученном img находим флаг.
